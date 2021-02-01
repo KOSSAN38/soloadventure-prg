@@ -42,8 +42,9 @@ public class GUI {
     }
 
     public void createbutton() {
-        this.button = new JButton();
-        this.window.;
+        this.button = new JButton("hejsan");
+        this.button.setSize(100, 50);
+
 
 
     }
