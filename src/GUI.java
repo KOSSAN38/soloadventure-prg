@@ -46,7 +46,6 @@ public class GUI {
         this.button.setSize(100, 50);
 
 
-
     }
 
     public void createmenuBar() {
