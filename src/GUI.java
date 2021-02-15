@@ -24,7 +24,7 @@ public class GUI {
 
     public GUI() {
         createWindow();
-        createbutton();
+        createButton();
         createmenuBar();
         createFileMenu();
         this.window.setVisible(true);
@@ -41,9 +41,10 @@ public class GUI {
         this.window.add(panel);
     }
 
-    public void createbutton() {
+    public void createButton() {
         this.button = new JButton("hejsan");
         this.button.setSize(100, 50);
+        this.button.setVisible(true);
 
 
     }
