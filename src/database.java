@@ -34,7 +34,7 @@ public class database {
                     System.out.println(body);
                 }
 
-                strSelect = "select description, targetId from links where storyId = " + currentRoom;
+                strSelect = "select description, taget_id from links where story_id = " + currentRoom;
 
                 rset = stmt.executeQuery(strSelect);
                 ArrayList<Integer> storyLinks = new ArrayList();
@@ -43,7 +43,7 @@ public class database {
                 int rowCount = 0;
                 while (rset.next()) {
                     String description = rset.getString("description");
-                    int storyLink = rset.getInt("targetId");
+                    int storyLink = rset.getInt("taget_id");
                     storyLinks.add(storyLink);
                     System.out.println(++rowCount + " " + description);
                 }

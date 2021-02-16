@@ -41,13 +41,23 @@ public class GUI {
         this.window.add(panel);
     }
 
+
+    /**
+     * Text från databas visas.
+     */
+    public void createTextArea() {
+
+    }
+        /**
+         * knappar som sköter valen.
+         */
     public void createButton() {
         this.button = new JButton("hejsan");
         this.button.setSize(100, 50);
         this.button.setVisible(true);
-
-
     }
+
+
 
     public void createmenuBar() {
         this.menuBar = new JMenuBar();
@@ -60,10 +70,11 @@ public class GUI {
 
     public void createFileMenu() {
 
-        this.iNew = new JMenuItem("Edit");
+        this.iNew = new JMenuItem("Create");
         this.menuFile.add(iNew);
 
-
+        this.iNew = new JMenuItem("Edit");
+        this.menuFile.add(iNew);
     }
 }
 

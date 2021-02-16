@@ -16,10 +16,4 @@ public class MVC {
         gui.window.setTitle("New");
 
     }
-
-    public void openFile() {
-
-        FileDialog fd = new FileDialog(gui.window, "Open", FileDialog.LOAD);
-        fd.setVisible(true);
-    }
 }
